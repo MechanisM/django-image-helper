@@ -1,9 +1,11 @@
-
 from cStringIO import StringIO
 import mimetypes
 import os
 
-from PIL import Image
+try:
+    import Image
+except ImportError:
+    from PIL import Image
 
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.db import models
