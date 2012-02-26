@@ -1,9 +1,8 @@
-
 from setuptools import setup, find_packages
 
 REQUIREMENTS = (
     'django>=1.3',
-    'PIL',
+    'pillow',
 )
 
 from image_helper import VERSION
